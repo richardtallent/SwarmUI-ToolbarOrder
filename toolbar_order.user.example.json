@@ -1,0 +1,8 @@
+{
+    "default": {
+        "hide": ["up"]
+    },
+    "presetbrowser": {
+        "order": ["refresh", "sort", "reverse", "filter", "depth", "format", "apply"]
+    }
+}
