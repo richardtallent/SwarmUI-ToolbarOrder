@@ -1,6 +1,6 @@
 # SwarmUI-ToolbarOrder
 
-A [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) extension that reorders and optionally hides the header toolbar controls of the file browsers (Models, LoRAs, VAEs, Embeddings, ControlNets, Wildcards, Presets, Image History, and any extension-made browser).
+This [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) extension reorders and/or hides the header toolbar controls of the file browsers (Models, LoRAs, VAEs, Embeddings, ControlNets, Wildcards, Presets, Image History, and any extension-made browser).
 
 ## Install
 
@@ -21,7 +21,11 @@ If you want to replace or tweak those, create a `toolbar_order.user.json` file.
 }
 ```
 
-The values for `browsername` for the standard browsers are `modelbrowser`, `sdvaebrowser`, `sdlorabrowser`, `sdembedbrowser`, `sdcontrolnetbrowser`, `wildcardsbrowser`, `presetbrowser`, `imagehistorybrowser`, `inputimagebrowser`, `simpletabbrowser`, and `comfyworkflowbrowser`. You can also use `default` to set defaults for all browsers that don't have their own key. All of these are optional.
+The values for `browsername` for the standard browsers are `modelbrowser`, `sdvaebrowser`, `sdlorabrowser`, `sdembedbrowser`, `sdcontrolnetbrowser`, `wildcardsbrowser`, `presetbrowser`, `imagehistorybrowser`, `inputimagebrowser`, `simpletabbrowser`, and `comfyworkflowbrowser`.
+
+You can also use `default` to set defaults for all browsers that don't have their own key.
+
+All of these are optional.
 
 Inside those:
 
@@ -34,7 +38,7 @@ Text buttons are also supported, such as the ones in the Presets browser. The to
 
 Anything you put in the token list that isn't recognized is ignored.
 
-Anything you *don't* mention in `order` remains in its relative order, after the ones you did specify. You can set a place for the unmentioned ones with the special token `*`.
+Anything you *don't* mention in `order` remains in its relative order, after the ones you *did* specify. You can set a place for the unmentioned ones with the special token `*`.
 
 ## Caveats
 
